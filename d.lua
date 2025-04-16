@@ -136,8 +136,9 @@ local function checkPlayersInServer()
 end
 
 if game.PlaceId == 123748395762873 then
-script_key="FLgciupRATvZhmIvCZnYTgKCtStaJoRK";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/KJJK/refs/heads/main/PusarX-loader.lua"))()
+getgenv().DeleteFile = false -- Set to true to delete the saved key file
+script_key = "" -- Optional: Enter your key here to validate it
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/Scripts/refs/heads/main/loader.lua", true))()
     if targetGameId ~= game.PlaceId then
         spawn(function()
             wait(mainHop)
@@ -181,8 +182,9 @@ elseif game.PlaceId == 75959166903570 or game.PlaceId == 80157158224004 or game.
         print("Players Check: Disable")
     end
   
-script_key="FLgciupRATvZhmIvCZnYTgKCtStaJoRK";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/KJJK/refs/heads/main/PusarX-loader.lua"))()
+getgenv().DeleteFile = false -- Set to true to delete the saved key file
+script_key = "" -- Optional: Enter your key here to validate it
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/Scripts/refs/heads/main/loader.lua", true))()
     if not allowJoin then
         spawn(function()
             while true do
